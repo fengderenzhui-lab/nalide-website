@@ -90,6 +90,13 @@ export const greenHosting = {
   alt: 'This website runs on green hosting — verified by The Green Web Foundation',
 };
 
+/** Internet.nl 网站测试满分徽章（2026-11-16 实测 100%、进其名人堂；徽章图为官方图、本地托管，链接指向该次测试报告；按其徽章条款，分数保持 100% 期间可用）。 */
+export const internetnl = {
+  href: 'https://internet.nl/site/nalide.com/4413891/',
+  src: '/badges/internetnl-100.svg',
+  alt: '100% score in the Internet.nl website test — nalide.com',
+};
+
 /** 页脚署名与站点信息：自托管字体均为 SIL OFL 1.1，许可全文随站点 /fonts/ 目录发布。 */
 export const colophon = {
   typefaces: '字体 Manrope · Michroma · IBM Plex Mono — SIL OFL 1.1',

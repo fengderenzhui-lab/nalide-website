@@ -1,0 +1,12 @@
+Internet.nl 100% website test badge
+
+Copyright (c) Internet.nl. All rights reserved.
+
+The badge image in this directory is the official "100% score in
+website test" badge provided by Internet.nl (internet.nl) for domains
+that score 100% in its website test and are listed in its Hall of
+Fame. It is reproduced here solely to link to the test report for
+nalide.com, in accordance with the badge terms published at
+https://en.internet.nl/faqs/badges/ (badge shown on the matching
+domain only, and only while the 100% score is kept). No rights to
+the artwork are granted beyond that use.

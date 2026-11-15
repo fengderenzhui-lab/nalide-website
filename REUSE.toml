@@ -70,7 +70,16 @@ SPDX-License-Identifier = "LicenseRef-NALIDE-Content"
 # Green Web Foundation badge artwork (third-party, used to link to the
 # live verification result for nalide.com).
 [[annotations]]
-path = ["public/badges/**"]
+path = ["public/badges/green-hosting.png"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "The Green Web Foundation"
 SPDX-License-Identifier = "LicenseRef-GreenWebBadge"
+
+# Internet.nl 100% website-test badge artwork (displayed per the
+# Internet.nl badge terms while nalide.com keeps its 100% score;
+# links to the domain's test report).
+[[annotations]]
+path = ["public/badges/internetnl-100.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Internet.nl"
+SPDX-License-Identifier = "LicenseRef-InternetNLBadge"
