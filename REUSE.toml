@@ -83,3 +83,13 @@ path = ["public/badges/internetnl-100.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "Internet.nl"
 SPDX-License-Identifier = "LicenseRef-InternetNLBadge"
+
+# disclose.io "Full Safe Harbor" seal (dioseal). The seal artwork is
+# dedicated to the public domain under CC0 1.0 by the disclose.io
+# project; it is displayed on the vulnerability disclosure policy
+# page, which adopts the disclose.io Full Safe Harbor terms.
+[[annotations]]
+path = ["public/badges/dioseal.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "disclose.io"
+SPDX-License-Identifier = "CC0-1.0"
