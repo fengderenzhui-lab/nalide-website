@@ -1,0 +1,68 @@
+version = 1
+
+# Self-annotation and project documentation / configuration files.
+[[annotations]]
+path = [
+    "REUSE.toml",
+    "README.md",
+    "README.en.md",
+    "CONTRIBUTING.md",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    ".gitignore",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 NALIDE"
+SPDX-License-Identifier = "MIT"
+
+# Manrope font files and their license text.
+[[annotations]]
+path = ["public/fonts/Manrope-*.woff2", "public/fonts/OFL-manrope.txt"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 The Manrope Project Authors (https://github.com/googlefonts/manrope)"
+SPDX-License-Identifier = "OFL-1.1"
+
+# Michroma font files and their license text.
+[[annotations]]
+path = ["public/fonts/Michroma-*.woff2", "public/fonts/OFL-michroma.txt"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 The Michroma Project Authors (https://github.com/googlefonts/Michroma-font)"
+SPDX-License-Identifier = "OFL-1.1"
+
+# IBM Plex Mono font files and their license text.
+[[annotations]]
+path = ["public/fonts/IBMPlexMono-*.woff2", "public/fonts/OFL-ibmplexmono.txt"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 IBM Corp. with Reserved Font Name \"Plex\""
+SPDX-License-Identifier = "OFL-1.1"
+
+# Brand assets and site artwork (not covered by the MIT license, see README).
+[[annotations]]
+path = [
+    "public/favicon.ico",
+    "public/favicon-16.png",
+    "public/favicon-32.png",
+    "public/apple-touch-icon.png",
+    "public/icon-512.png",
+    "public/media/**",
+    "public/layers/**",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 NALIDE"
+SPDX-License-Identifier = "LicenseRef-NALIDE-Content"
+
+# Website copy and policy pages (not covered by the MIT license, see README).
+[[annotations]]
+path = [
+    "public/privacy/**",
+    "public/terms/**",
+    "public/security/**",
+    "public/llms.txt",
+    "public/robots.txt",
+    "public/sitemap.xml",
+    "public/.well-known/security.txt",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 NALIDE"
+SPDX-License-Identifier = "LicenseRef-NALIDE-Content"

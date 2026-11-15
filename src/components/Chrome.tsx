@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 NALIDE
+// SPDX-License-Identifier: MIT
+
 import {useEffect, useState, type MouseEvent} from 'react';
 import {brand, colophon, friends, nav, policies, securityLinks, statusPage} from '../content';
 import {onFrame, scrollToHash} from '../lib/scroll';

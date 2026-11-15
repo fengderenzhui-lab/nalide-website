@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 NALIDE
+// SPDX-License-Identifier: MIT
+
 import {useEffect} from 'react';
 import {Footer, Header} from './components/Chrome';
 import {Earthrise} from './components/Earthrise';

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 NALIDE
+// SPDX-License-Identifier: MIT
+
 /**
  * NALIDE 品牌主站文案。主站只讲品牌：生态、路径、原则；
  * 产品细节与购买在各产品子站（如 idc.nalide.com、pass.nalide.com）。

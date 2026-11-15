@@ -1,3 +1,7 @@
+/*
+ * SPDX-FileCopyrightText: 2026 NALIDE
+ * SPDX-License-Identifier: MIT
+ */
 @import "tailwindcss";
 
 /* Lenis' own stylesheet (its package exports don't expose the .css path). */

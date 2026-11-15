@@ -4,6 +4,8 @@ Source code of the NALIDE brand website: https://nalide.com
 
 中文版：[README.md](README.md)
 
+[![REUSE status](https://api.reuse.software/badge/github.com/fengderenzhui-lab/nalide-website)](https://api.reuse.software/info/github.com/fengderenzhui-lab/nalide-website)
+
 Built with React 19, Vite 6, TypeScript and Tailwind CSS v4, plus Lenis for smooth scrolling. The site is fully static; there is no backend dependency (`public/csp-report.php` is a small CSP report collector that runs in the origin server's PHP environment).
 
 ## Getting started

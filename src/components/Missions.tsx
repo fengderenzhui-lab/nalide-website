@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 NALIDE
+// SPDX-License-Identifier: MIT
+
 import type {MouseEvent} from 'react';
 import {missions} from '../content';
 import {useReveals} from '../hooks/useReveals';

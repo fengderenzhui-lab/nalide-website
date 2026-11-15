@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 NALIDE
+// SPDX-License-Identifier: MIT
+
 import {useState, type FormEvent} from 'react';
 import {brand, reserve} from '../content';
 import {useReveals} from '../hooks/useReveals';

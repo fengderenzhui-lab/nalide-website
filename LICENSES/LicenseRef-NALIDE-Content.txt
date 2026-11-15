@@ -1,0 +1,12 @@
+NALIDE website content and brand assets
+
+Copyright (c) 2026 NALIDE. All rights reserved.
+
+This license reference covers the NALIDE website copy, the policy pages
+(privacy policy, terms of service, security disclosure policy), the NALIDE
+name and logo, and the images published with the website.
+
+These materials are published as part of the NALIDE website and this
+repository for reference only. They are not licensed for reuse, imitation,
+redistribution, or commercial use without the prior written permission of
+NALIDE.

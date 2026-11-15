@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 NALIDE
+// SPDX-License-Identifier: MIT
+
 import {useEffect, useRef, useState} from 'react';
 import {trajectory} from '../content';
 import {clamp, easeOutCubic, pinProgress, range} from '../lib/math';

@@ -1,4 +1,6 @@
 <?php
+// SPDX-FileCopyrightText: 2026 NALIDE
+// SPDX-License-Identifier: MIT
 // NALIDE CSP violation report collector.
 // Browsers POST violation reports here (CSP report-uri / report-to).
 // Appends one JSON line per report to a log outside the webroot and returns 204.

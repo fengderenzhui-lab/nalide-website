@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 NALIDE
+// SPDX-License-Identifier: MIT
+
 /**
  * 预渲染：构建产物先在本地起服务，用无头 Chrome 打开首页，
  * 等首帧渲染稳定后把完整 DOM 序列化回 dist/index.html。
