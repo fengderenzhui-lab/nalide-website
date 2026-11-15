@@ -1,0 +1,6 @@
+# NALIDE 品牌主站 robots 政策
+# 欢迎搜索引擎、AI 搜索与 AI 助手抓取本站公开内容（品牌口径：AI 爬虫放行，只拦恶意自动化，拦截在边缘防护层执行，不在本文件）。
+User-agent: *
+Allow: /
+
+Sitemap: https://nalide.com/sitemap.xml

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>漏洞披露政策 · NALIDE</title>
+    <meta name="description" content="NALIDE 漏洞披露政策：如何报告安全问题、我们的响应承诺与安全港条款。" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link href="/fonts/fonts.css" rel="stylesheet" />
+    <style>
+      :root { color-scheme: dark; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #04070f;
+        color: #c9d6ea;
+        font-family: "Manrope", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+        line-height: 1.75;
+        padding: 48px 20px 80px;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      .brand {
+        font-family: "Michroma", "Manrope", sans-serif;
+        letter-spacing: 0.35em;
+        font-size: 15px;
+        color: #7db4ff;
+        text-decoration: none;
+      }
+      h1 { font-size: 30px; color: #f2f7ff; margin: 36px 0 8px; font-weight: 700; }
+      .sub { color: #7d90ad; font-size: 14px; margin-bottom: 36px; }
+      h2 { font-size: 18px; color: #f2f7ff; margin: 34px 0 10px; font-weight: 700; }
+      p, li { font-size: 15px; }
+      ul { padding-left: 22px; }
+      li { margin: 4px 0; }
+      a { color: #5ea2ff; text-decoration: none; }
+      a:hover { color: #9fc6ff; }
+      code {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 13.5px;
+        color: #9fc6ff;
+        background: rgba(94, 162, 255, 0.08);
+        padding: 1px 6px;
+        border-radius: 4px;
+      }
+      .back { display: inline-block; margin-top: 48px; font-size: 14px; }
+      footer { margin-top: 56px; color: #5b6c86; font-size: 13px; }
+      footer nav { margin-bottom: 10px; }
+      footer nav a { color: #7d90ad; margin-right: 18px; }
+      footer nav a:hover { color: #c9d6ea; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="brand" href="/">NALIDE</a>
+      <h1>漏洞披露政策</h1>
+      <p class="sub">Security Disclosure Policy · 最后更新：2026 年 11 月 15 日</p>
+
+      <p>NALIDE 做的是安全产品，我们欢迎善意的安全研究。如果你发现了我们站点或软件的安全问题，请按下面的方式告诉我们，我们会认真对待每一条报告。</p>
+
+      <h2>怎么报告</h2>
+      <p>发邮件到 <a href="mailto:postmaster@nalide.com">postmaster@nalide.com</a>，请尽量写清：</p>
+      <ul>
+        <li>问题出现在哪个页面、接口或版本</li>
+        <li>复现步骤，以及你实际看到的结果</li>
+        <li>你判断的影响范围</li>
+      </ul>
+      <p>机器可读的联系信息见 <a href="/.well-known/security.txt">security.txt</a>。</p>
+
+      <h2>我们承诺</h2>
+      <ul>
+        <li>收到报告后 <strong>72 小时内</strong>回复确认</li>
+        <li>评估完成后告知你严重程度和处理进度，修好后通知你结果</li>
+        <li>经你同意，我们会在本页的致谢名单里写上你的名字</li>
+      </ul>
+
+      <h2>安全港</h2>
+      <p>只要你的研究符合本政策（善意、不破坏、不越界），我们不会追究你的法律责任，也不会向任何平台投诉你的账号。我们对"善意"的判断标准很简单：你是为了指出问题，不是为了利用问题。</p>
+
+      <h2>范围</h2>
+      <ul>
+        <li><code>nalide.com</code> 及其子域名</li>
+        <li>NALIDE 正式发布的软件与客户端</li>
+      </ul>
+
+      <h2>不在范围</h2>
+      <ul>
+        <li>拒绝服务、洪水、暴力破解等影响可用性的测试</li>
+        <li>社会工程、钓鱼、物理入侵</li>
+        <li>第三方服务的漏洞（例如飞书、Cloudflare），请直接报告给对应厂商</li>
+        <li>没有实际影响的问题：扫描器自动报告、缺少某个响应头的提示、纯理论风险</li>
+      </ul>
+
+      <h2>请不要这样做</h2>
+      <ul>
+        <li>在修复前公开漏洞细节</li>
+        <li>访问、修改或删除不属于你的数据</li>
+        <li>以漏洞为要挟索取财物——这类邮件我们只会转交警方</li>
+      </ul>
+
+      <h2>致谢</h2>
+      <p>暂无。希望第一位是你。</p>
+
+      <a class="back" href="/">← 返回首页</a>
+      <footer>
+        <nav>
+          <a href="/privacy/">隐私政策</a>
+          <a href="/terms/">用户协议</a>
+          <a href="/security/">漏洞披露政策</a>
+        </nav>
+        © 2026 NALIDE · All rights reserved
+      </footer>
+    </main>
+  </body>
+</html>
