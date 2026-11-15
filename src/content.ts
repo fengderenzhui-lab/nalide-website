@@ -83,6 +83,13 @@ export const securityLinks = [
 /** 服务状态页（站外托管：UptimeRobot 公开状态页；自定义域名是其付费功能，免费版先用官方地址，升级后换回 status.nalide.com）。 */
 export const statusPage = {label: '服务状态', href: 'https://stats.uptimerobot.com/4ZkFuWJ2ri'};
 
+/** 绿色托管核验（Green Web Foundation 数据集比对，认的是边缘托管商 Cloudflare；徽章图为官方图、本地托管，链接指向实时核验页；状态由每周漂移检查复核）。 */
+export const greenHosting = {
+  href: 'https://www.thegreenwebfoundation.org/green-web-check/?url=nalide.com',
+  src: '/badges/green-hosting.png',
+  alt: 'This website runs on green hosting — verified by The Green Web Foundation',
+};
+
 /** 页脚署名与站点信息：自托管字体均为 SIL OFL 1.1，许可全文随站点 /fonts/ 目录发布。 */
 export const colophon = {
   typefaces: '字体 Manrope · Michroma · IBM Plex Mono — SIL OFL 1.1',

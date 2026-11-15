@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 import {useEffect, useState, type MouseEvent} from 'react';
-import {brand, colophon, friends, nav, policies, securityLinks, statusPage} from '../content';
+import {brand, colophon, friends, greenHosting, nav, policies, securityLinks, statusPage} from '../content';
 import {onFrame, scrollToHash} from '../lib/scroll';
 
 function go(e: MouseEvent<HTMLAnchorElement>, then?: () => void) {
@@ -122,6 +122,11 @@ export function Footer() {
             ))}
           </span>
         </div>
+      </div>
+      <div className="pt-7">
+        <a href={greenHosting.href} target="_blank" rel="noopener" className="inline-block opacity-90 transition-opacity hover:opacity-100">
+          <img src={greenHosting.src} alt={greenHosting.alt} width={200} height={95} loading="lazy" className="h-[52px] w-auto" />
+        </a>
       </div>
       <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1.5 pt-7 font-mono text-label normal-case text-regolith/35">
         <span>{colophon.typefaces}</span>

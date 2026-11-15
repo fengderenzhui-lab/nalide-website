@@ -1,0 +1,10 @@
+Green Web Foundation verification badge
+
+Copyright (c) The Green Web Foundation. All rights reserved.
+
+The badge image in this directory is the official "Green Hosting" badge
+provided by The Green Web Foundation (thegreenwebfoundation.org) for the
+verified domain nalide.com. It is reproduced here solely to link to the
+live verification result for that domain, in accordance with the
+Foundation's terms for displaying the badge. No rights to the artwork are
+granted beyond that use.

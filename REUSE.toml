@@ -66,3 +66,11 @@ path = [
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 NALIDE"
 SPDX-License-Identifier = "LicenseRef-NALIDE-Content"
+
+# Green Web Foundation badge artwork (third-party, used to link to the
+# live verification result for nalide.com).
+[[annotations]]
+path = ["public/badges/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "The Green Web Foundation"
+SPDX-License-Identifier = "LicenseRef-GreenWebBadge"
