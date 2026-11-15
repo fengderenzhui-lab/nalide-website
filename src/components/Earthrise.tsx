@@ -41,7 +41,9 @@ export function Earthrise() {
   const elevRef = useRef<HTMLSpanElement>(null);
   const reduced = useReducedMotion();
   const reducedRef = useRef(reduced);
-  reducedRef.current = reduced;
+  useEffect(() => {
+    reducedRef.current = reduced;
+  }, [reduced]);
 
   // First-paint intro: the stage fades/settles in once mounted.
   const [live, setLive] = useState(false);
