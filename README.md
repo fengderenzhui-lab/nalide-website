@@ -2,6 +2,8 @@
 
 nalide.com 品牌站的前端源码，线上地址：https://nalide.com
 
+English version: [README.en.md](README.en.md)
+
 技术栈：React 19 + Vite 6 + TypeScript + Tailwind CSS v4 + Lenis。纯静态站点，无后端依赖（`public/csp-report.php` 是 CSP 报告接收端点，部署在源站 PHP 环境）。
 
 ## 本地运行
