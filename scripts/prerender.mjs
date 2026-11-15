@@ -6,15 +6,21 @@
  * 等首帧渲染稳定后把完整 DOM 序列化回 dist/index.html。
  * 效果：HTML 里直接带全文（AI 抓取器/搜索引擎不跑 JS 也能读），
  * 真人浏览器打开时 React 照常接管、动画不变。
- * 用法：npm run build 后，node scripts/prerender.mjs（需要 ~/workspace/shottools 的 puppeteer）。
+ * 用法：npm run build 后，node scripts/prerender.mjs（puppeteer 为项目 devDependency）。
  */
 import {createRequire} from 'node:module';
 import {spawn} from 'node:child_process';
 import {readFileSync, writeFileSync} from 'node:fs';
 import {setTimeout as sleep} from 'node:timers/promises';
 
-const require = createRequire('/home/hatch/workspace/shottools/anchor.js');
-const puppeteer = require('puppeteer');
+const require = createRequire(import.meta.url);
+let puppeteer;
+try {
+  puppeteer = require('puppeteer');
+} catch {
+  // 本地回退：沙箱里的共享 shottools 副本
+  puppeteer = createRequire('/home/hatch/workspace/shottools/anchor.js')('puppeteer');
+}
 
 const PORT = 3009;
 const DIST_INDEX = new URL('../dist/index.html', import.meta.url).pathname;
