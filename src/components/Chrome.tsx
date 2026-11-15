@@ -123,12 +123,12 @@ export function Footer() {
           </span>
         </div>
       </div>
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-7">
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-3 pt-7">
         <a href={greenHosting.href} target="_blank" rel="noopener" className="inline-block opacity-90 transition-opacity hover:opacity-100">
-          <img src={greenHosting.src} alt={greenHosting.alt} width={200} height={95} loading="lazy" className="h-[52px] w-auto" />
+          <img src={greenHosting.src} alt={greenHosting.alt} width={200} height={95} loading="lazy" className="h-10 w-auto" />
         </a>
         <a href={internetnl.href} target="_blank" rel="noopener" className="inline-block opacity-90 transition-opacity hover:opacity-100">
-          <img src={internetnl.src} alt={internetnl.alt} width={204} height={38} loading="lazy" className="h-[40px] w-auto" />
+          <img src={internetnl.src} alt={internetnl.alt} width={204} height={38} loading="lazy" className="h-10 w-auto" />
         </a>
       </div>
       <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1.5 pt-7 font-mono text-label normal-case text-regolith/35">
