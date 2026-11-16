@@ -62,6 +62,8 @@ path = [
     "public/security/**",
     "public/about/**",
     "public/story/**",
+    "public/careers/**",
+    "public/brand/**",
     "public/announcements/**",
     "public/llms.txt",
     "public/robots.txt",

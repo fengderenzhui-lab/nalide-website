@@ -104,6 +104,29 @@ a:hover { color: #9fc6ff; }
 .g-about .fact-name { color: #8fa8c8; font-size: 13.5px; }
 .g-about .fact-val { color: #e6eefb; font-size: 14.5px; }
 
+/* g-page (careers / brand simple pages) */
+.g-page h1 { font-size: 30px; color: #f2f7ff; margin: 36px 0 8px; font-weight: 700; }
+.g-page .sub { color: #7d90ad; font-size: 14px; margin-bottom: 30px; }
+.g-page .lede { font-size: 17.5px; line-height: 1.8; color: #e6eefb; margin-bottom: 8px; }
+.g-page h2 { font-size: 18px; color: #f2f7ff; margin: 40px 0 10px; font-weight: 700; }
+.g-page p { margin: 10px 0; }
+.g-page .back { display: inline-block; margin-top: 48px; font-size: 14px; }
+.g-page .logo-block { display: flex; align-items: center; gap: 20px; margin-top: 14px; }
+.g-page .logo-tile { background: #ffffff; border-radius: 12px; padding: 14px; line-height: 0; flex: none; }
+.g-page .logo-tile img { width: 96px; height: 96px; display: block; }
+.g-page .dl { margin-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+.g-page .dl-row { display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: 16px; padding: 11px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08); align-items: baseline; }
+.g-page .dl-name { color: #f2f7ff; font-size: 14.5px; font-weight: 600; }
+.g-page .swatches { margin-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+.g-page .sw-row { display: grid; grid-template-columns: 2rem 7rem minmax(0, 1fr); gap: 14px; padding: 11px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08); align-items: center; }
+.g-page .chip { width: 22px; height: 22px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.18); display: inline-block; }
+.g-page .chip-void { background: #05070c; }
+.g-page .chip-earth { background: #6fb6ff; }
+.g-page .chip-rego { background: #c9ccd3; }
+.g-page .chip-panel { background: #0b0f18; }
+.g-page .sw-name { color: #f2f7ff; font-size: 14.5px; font-weight: 600; }
+.g-page .sw-hex { color: #8fa8c8; font-family: "IBM Plex Mono", monospace; font-size: 13.5px; }
+
 /* story page timeline */
 .g-story .tl { border-top: 1px solid rgba(255, 255, 255, 0.08); margin-top: 14px; }
 .g-story .tl-row { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08); align-items: baseline; }
