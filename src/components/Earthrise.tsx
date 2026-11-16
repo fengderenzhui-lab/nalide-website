@@ -16,6 +16,9 @@ import {onFrame} from '../lib/scroll';
  *   0.10 – 0.50  EARTHRISE resolves between the plains and the crater
  *   0.28 – 0.60  the crater rim closes in around the view — you're inside
  *                it looking out — and the astronaut and ground rise
+ *   0.64 – 0.78  the closing statement — the three principles — resolves
+ *                over the darkening frame and holds to the end, so the
+ *                exit is something to read, not a stretch of black
  *   0.70 – 1.00  everything tilts away upward and the ground swallows the
  *                frame to black, which is where the page continues
  *
@@ -38,6 +41,7 @@ export function Earthrise() {
   const veilRef = useRef<HTMLDivElement>(null);
   const dustRef = useRef<HTMLCanvasElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
+  const statementRef = useRef<HTMLDivElement>(null);
   const hudRef = useRef<HTMLDivElement>(null);
   const clockRef = useRef<HTMLParagraphElement>(null);
   const elevRef = useRef<HTMLSpanElement>(null);
@@ -148,6 +152,14 @@ export function Earthrise() {
       title.style.transform = `translate3d(0, ${-p * 6}vh, 0)`;
       title.style.filter = tIn < 0.99 ? `blur(${(1 - tIn) * 10}px)` : '';
 
+      // Closing statement: resolves over the blackout and holds.
+      const sIn = easeOutCubic(range(p, 0.64, 0.78));
+      const sOut = range(p, 0.965, 1);
+      const statement = statementRef.current!;
+      statement.style.opacity = String(sIn * (1 - sOut));
+      statement.style.transform = `translate3d(0, ${lerp(5, 0, sIn)}vh, 0)`;
+      statement.style.filter = sIn < 0.99 ? `blur(${(1 - sIn) * 8}px)` : '';
+
       // Telemetry.
       hudRef.current!.style.opacity = String(range(p, 0.02, 0.1) * (1 - range(p, 0.62, 0.72)));
       const secs = p * 5400;
@@ -177,7 +189,7 @@ export function Earthrise() {
   );
 
   return (
-    <section id="top" ref={rootRef} aria-label="NALIDE 品牌主视觉" className="relative h-[440svh]">
+    <section id="top" ref={rootRef} aria-label="NALIDE 品牌主视觉" className="relative h-[360svh] md:h-[440svh]">
       <div className={`sticky top-0 h-screen-s overflow-hidden bg-void stage-intro ${live ? 'is-live' : ''}`}>
         {ORDER.slice(0, 3).map((n) => layer(n))}
 
@@ -191,6 +203,18 @@ export function Earthrise() {
         </div>
 
         {ORDER.slice(3).map((n) => layer(n))}
+
+        {/* Closing statement, read over the blackout at the end. */}
+        <div ref={statementRef} className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0">
+          <div className="text-center [text-shadow:0_4px_40px_rgb(0_0_0/0.6)]">
+            <p className="font-mono text-label text-regolith/80 uppercase">{hero.closingLabel}</p>
+            <div className="mt-6 space-y-3 font-display text-[2rem] leading-tight text-white md:text-5xl">
+              {hero.closingLines.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* Cosmic dust on the lens. */}
         <div
