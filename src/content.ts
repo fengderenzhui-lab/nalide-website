@@ -80,7 +80,7 @@ export const announcements = [
 /** 关于小段：首页公告区下方的一段品牌简介，全文在 /about/，故事在 /story/。 */
 export const aboutTeaser = {
   eyebrow: '关于',
-  body: 'NALIDE 是一套给中小商家的 IDC 业务系统，把域名、SSL 与云资源的计费和开通装进一套系统。我们把安全放在第一位，承诺长期维护——故事从这里说起。',
+  body: 'NALIDE 是一个专注于安全与基础设施的软件品牌：IDC 业务系统打头阵，密码管理、证书与网络工具随后跟上。所有产品同一套标准——安全放在第一位，承诺长期维护。故事从这里说起。',
   cta: '了解 NALIDE',
   storyCta: '读我们的故事',
   storyHref: '/story/',
