@@ -34,7 +34,7 @@ export const intro = {
 };
 
 export const log = [
-  {tag: 'IDC', title: '业务系统', body: '给经销商的域名与 SSL 业务系统：安全优先，持续维护。', image: '/media/cards/m1-launch.webp'},
+  {tag: 'IDC', title: '业务系统', body: '给经销商的域名与 SSL 业务系统：计费、开通、续费都在一个后台，安全优先，持续维护。', image: '/media/cards/m1-launch.webp'},
   {tag: 'PASS', title: 'Nalipass', body: '自研密码管理器，核心开源可审计，把安全带到个人。', image: '/media/cards/m2-orbit.webp'},
   {tag: 'CERT', title: '证书管理', body: '证书的签发、续期与巡检，一处看全，不再靠人记日子。', image: '/media/cards/m3-base.webp'},
   {tag: 'TOOLS', title: '基础设施工具', body: 'IP 诊断与网络小工具，顺手、免费、打开就能用。', image: '/media/cards/m4-walk.webp'},
