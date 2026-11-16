@@ -25,8 +25,6 @@ export const hero = {
   title: 'NALIDE',
   kicker: '一个认真做基础设施的品牌',
   site: 'Hong Kong · 22.32°N 114.17°E',
-  closingLabel: '我们做产品的标准',
-  closingLines: ['安全优先', '持续维护', '长期主义'],
 };
 
 export const intro = {
