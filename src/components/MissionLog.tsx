@@ -60,7 +60,7 @@ export function MissionLog() {
 
   return (
     <section ref={rootRef} id="log" aria-labelledby="log-title" className="relative bg-void h-[340svh]">
-      <div className="sticky top-0 flex h-screen-s flex-col justify-center overflow-hidden pt-16 md:flex-row md:items-center md:justify-start md:pt-0">
+      <div className="sticky top-0 flex h-screen-s flex-col justify-start overflow-hidden pt-24 md:flex-row md:items-center md:justify-start md:pt-0">
         {/* Cards slide under the intro column and off the right edge;
             soften both seams with a fade into the section background. */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-0 z-[5] hidden w-[38vw] bg-gradient-to-r from-void via-void/70 to-transparent md:block" />

@@ -152,11 +152,12 @@ export function Earthrise() {
       title.style.transform = `translate3d(0, ${-p * 6}vh, 0)`;
       title.style.filter = tIn < 0.99 ? `blur(${(1 - tIn) * 10}px)` : '';
 
-      // Closing statement: resolves over the blackout and holds.
+      // Closing statement: resolves over the blackout and holds to the
+      // very end — it leaves with the section as it scrolls away, so the
+      // handover to the next section never passes through a dead screen.
       const sIn = easeOutCubic(range(p, 0.64, 0.78));
-      const sOut = range(p, 0.965, 1);
       const statement = statementRef.current!;
-      statement.style.opacity = String(sIn * (1 - sOut));
+      statement.style.opacity = String(sIn);
       statement.style.transform = `translate3d(0, ${lerp(5, 0, sIn)}vh, 0)`;
       statement.style.filter = sIn < 0.99 ? `blur(${(1 - sIn) * 8}px)` : '';
 
