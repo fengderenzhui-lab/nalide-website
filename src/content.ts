@@ -57,9 +57,9 @@ export const missions = {
   heading: '我们信的三件事。',
   note: '说到做到，比说得好听重要。',
   items: [
-    {name: '安全优先', days: 1, unit: '原则', lines: ['授权校验不打折', '自动巡逻与复核', '出了问题先处理，再谈营销'], cta: '去看业务系统'},
-    {name: '长期维护', days: 2, unit: '原则', lines: ['持续更新，不跑路', '老客户和新客户同等对待', '文档与支持跟得上'], cta: '去看 Nalipass', featured: true},
-    {name: '克制专注', days: 3, unit: '原则', lines: ['只做想清楚的产品', '不堆没用的功能', '不拿用户数据做交易'], cta: '去看工具线'},
+    {name: '安全优先', days: 1, unit: '原则', lines: ['授权校验不打折', '自动巡逻与复核', '出了问题先处理，再谈营销'], cta: '咨询业务系统'},
+    {name: '长期维护', days: 2, unit: '原则', lines: ['持续更新，不跑路', '老客户和新客户同等对待', '文档与支持跟得上'], cta: '咨询 Nalipass', featured: true},
+    {name: '克制专注', days: 3, unit: '原则', lines: ['只做想清楚的产品', '不堆没用的功能', '不拿用户数据做交易'], cta: '咨询工具线'},
   ],
 };
 
