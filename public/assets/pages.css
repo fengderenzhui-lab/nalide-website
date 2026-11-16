@@ -25,6 +25,7 @@ a:hover { color: #9fc6ff; }
 .sf-badges img { height: 40px; width: auto; display: block; }
 .sf-meta { display: flex; flex-wrap: wrap; gap: 6px 20px; padding-top: 26px; text-transform: none; letter-spacing: normal; color: rgba(169, 188, 216, 0.65); }
 .sf-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 14px; }
+.sf-operator { padding-top: 8px; text-transform: none; }
 
 /* g-doc */
 .g-doc h1 { font-size: 30px; color: #f2f7ff; margin: 36px 0 8px; font-weight: 700; }

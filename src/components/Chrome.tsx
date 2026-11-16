@@ -141,10 +141,13 @@ export function Footer() {
         <span>更新于 {colophon.updated}</span>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 pt-3.5 font-mono text-label text-regolith/60 uppercase">
-        <span>© {new Date().getFullYear()} NALIDE HongKongShine Electronic Co., Limited · 版权所有</span>
+        <span>© {new Date().getFullYear()} NALIDE · 版权所有</span>
         <a href="#top" onClick={(e) => go(e)} className="hover:text-white">
           回到顶部 ↑
         </a>
+      </div>
+      <div className="pt-2 font-mono text-label text-regolith/60 normal-case">
+        <span>运营公司：HongKongShine Electronic Co., Limited</span>
       </div>
       <div className="flex flex-wrap items-center gap-x-5 gap-y-3 pt-6">
         <a href={greenHosting.href} target="_blank" rel="noopener" className="inline-block opacity-90 transition-opacity hover:opacity-100">
