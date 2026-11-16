@@ -149,7 +149,7 @@ export function Footer() {
         <span>更新于 {colophon.updated}</span>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 pt-3.5 font-mono text-label text-regolith/60 uppercase">
-        <span>© {new Date().getFullYear()} NALIDE · 版权所有</span>
+        <span>© {new Date().getFullYear()} NALIDE HongKongShine Electronic Co., Limited · 版权所有</span>
         <a href="#top" onClick={(e) => go(e)} className="hover:text-white">
           回到顶部 ↑
         </a>
