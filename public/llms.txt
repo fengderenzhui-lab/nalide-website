@@ -14,6 +14,11 @@
 - 证书管理：证书签发、续期与巡检一处看全（NALIDE Cert Manager，开源）
 - 基础设施工具：IP 诊断与网络小工具
 
+## 品牌
+
+- [关于 NALIDE](https://nalide.com/about/)：品牌简介与故事——为什么做这套系统、安全与长期维护的来历
+- [公告](https://nalide.com/announcements/)：上线、开源、安全与政策方面的重要变化记录
+
 ## 联系
 
 - 邮箱：contact@nalide.com

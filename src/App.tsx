@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 import {useEffect} from 'react';
+import {Announcements} from './components/Announcements';
 import {Footer, Header} from './components/Chrome';
 import {Earthrise} from './components/Earthrise';
 import {MissionLog} from './components/MissionLog';
@@ -24,6 +25,7 @@ export default function App() {
         <MissionLog />
         <Trajectory />
         <Missions />
+        <Announcements />
         <Reserve />
       </main>
       <Footer />

@@ -16,6 +16,8 @@ export const nav = [
   {label: '生态', href: '#log'},
   {label: '路径', href: '#trajectory'},
   {label: '原则', href: '#missions'},
+  {label: '公告', href: '/announcements/'},
+  {label: '关于', href: '/about/'},
   {label: '联系', href: '#reserve'},
 ];
 
@@ -59,6 +61,27 @@ export const missions = {
     {name: '长期维护', days: 2, unit: '原则', lines: ['持续更新，不跑路', '老客户和新客户同等对待', '文档与支持跟得上'], cta: '去看 Nalipass', featured: true},
     {name: '克制专注', days: 3, unit: '原则', lines: ['只做想清楚的产品', '不堆没用的功能', '不拿用户数据做交易'], cta: '去看工具线'},
   ],
+};
+
+/** 公告：首页只放最近三条，完整列表在 /announcements/（静态页，两处手动保持一致）。 */
+export const newsSection = {
+  eyebrow: '公告',
+  heading: '最近发生的事。',
+  note: '只报重要的，不吵。',
+  allLabel: '查看全部公告',
+};
+
+export const announcements = [
+  {date: '2026-11-16', title: '品牌站前端开源', body: '前端代码已在 GitHub 公开（MIT 许可），v1.0.0 同步发布。'},
+  {date: '2026-11-16', title: 'Internet.nl 测试满分', body: '本站在 Internet.nl 网站测试中取得 100%，进入其名人堂。'},
+  {date: '2026-11-15', title: '品牌站全新上线', body: '主站只讲品牌，产品陆续转入各自子站。'},
+];
+
+/** 关于小段：首页公告区下方的一段品牌简介，全文在 /about/。 */
+export const aboutTeaser = {
+  eyebrow: '关于',
+  body: 'NALIDE 是一套给中小商家的 IDC 业务系统，把域名、SSL 与云资源的计费和开通装进一套系统。我们把安全放在第一位，承诺长期维护——故事从这里说起。',
+  cta: '了解 NALIDE',
 };
 
 /** 页脚友情链接：自家站点互链（中小微站页脚同样链回本站）。 */
