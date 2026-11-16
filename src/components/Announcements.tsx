@@ -28,11 +28,20 @@ export function Announcements() {
             style={{transitionDelay: `${i * 110}ms`}}
             className="grid gap-1.5 border-b border-white/10 py-6 last:border-b-0 md:grid-cols-[11rem_minmax(0,1fr)] md:gap-8 md:py-7"
           >
-            <time dateTime={a.date} className="font-mono text-label text-regolith/50">
-              {a.date}
-            </time>
+            <span className="flex items-center gap-3">
+              <time dateTime={a.date} className="font-mono text-label text-regolith/50">
+                {a.date}
+              </time>
+              <span className="rounded-[3px] border border-earth/40 px-1.5 font-mono text-[0.6875rem] leading-relaxed tracking-widest text-earth">
+                {a.tag}
+              </span>
+            </span>
             <div>
-              <h3 className="text-[1.0625rem] font-semibold text-white">{a.title}</h3>
+              <h3 className="text-[1.0625rem] font-semibold text-white">
+                <a href={a.href} className="transition-colors hover:text-earth">
+                  {a.title}
+                </a>
+              </h3>
               <p className="mt-1 text-regolith/75">{a.body}</p>
             </div>
           </li>
@@ -50,12 +59,17 @@ export function Announcements() {
           <p className="font-mono text-label text-earth uppercase">{aboutTeaser.eyebrow}</p>
           <p className="mt-4 max-w-2xl text-[1.125rem] leading-relaxed text-regolith/85">{aboutTeaser.body}</p>
         </div>
-        <a
-          href="/about/"
-          className="inline-block rounded-[4px] bg-white px-5 py-3 text-center font-mono text-label font-medium text-void uppercase transition-colors hover:bg-earth"
-        >
-          {aboutTeaser.cta}
-        </a>
+        <div className="flex flex-col items-start gap-4 md:items-end">
+          <a
+            href="/about/"
+            className="inline-block rounded-[4px] bg-white px-5 py-3 text-center font-mono text-label font-medium text-void uppercase transition-colors hover:bg-earth"
+          >
+            {aboutTeaser.cta}
+          </a>
+          <a href={aboutTeaser.storyHref} className="font-mono text-label text-earth uppercase transition-colors hover:text-white">
+            {aboutTeaser.storyCta} →
+          </a>
+        </div>
       </div>
     </section>
   );

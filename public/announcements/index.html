@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>公告 · NALIDE</title>
-    <meta name="description" content="NALIDE 公告：站点上线、开源、安全与政策方面的重要变化，都记在这里。" />
+    <meta name="description" content="NALIDE 公告索引：站点上线、开源、安全与政策方面的重要变化。点标题看每条的详情页。" />
     <meta property="og:title" content="公告 · NALIDE" />
     <meta property="og:description" content="上线、开源、安全与政策方面的重要变化记录。" />
     <meta property="og:type" content="website" />
@@ -37,12 +37,13 @@
       a { color: #5ea2ff; text-decoration: none; }
       a:hover { color: #9fc6ff; }
       .month { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; letter-spacing: 0.14em; color: #7d90ad; margin: 26px 0 4px; font-weight: 500; }
-      .entry { padding: 18px 0 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+      .entry { padding: 16px 0 18px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
       .entry-head { display: flex; align-items: center; gap: 12px; }
       .entry time { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #7d90ad; }
       .tag { font-size: 11px; letter-spacing: 0.1em; color: #7db4ff; border: 1px solid rgba(94, 162, 255, 0.35); border-radius: 3px; padding: 0 7px; line-height: 1.7; }
-      .entry h2 { font-size: 17px; color: #f2f7ff; margin: 5px 0 4px; font-weight: 700; }
-      .entry p { color: #a9bcd8; font-size: 14.5px; }
+      .entry h2 { font-size: 17px; margin: 5px 0 0; font-weight: 700; }
+      .entry h2 a { color: #f2f7ff; }
+      .entry h2 a:hover { color: #5ea2ff; }
       .back { display: inline-block; margin-top: 48px; font-size: 14px; }
       .site-footer { margin-top: 64px; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 30px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(169, 188, 216, 0.55); }
       .site-footer a { color: inherit; text-decoration: none; }
@@ -66,38 +67,33 @@
     <main>
       <a class="brand" href="/">NALIDE</a>
       <h1>公告</h1>
-      <p class="sub">Announcements · 只记重要的变化，按日期倒序 · <a href="/announcements/rss.xml">RSS 订阅</a></p>
+      <p class="sub">Announcements · 只记重要的变化，按日期倒序，点标题看详情 · <a href="/announcements/rss.xml">RSS 订阅</a></p>
 
       <h2 class="month">2026 年 11 月</h2>
 
-      <article class="entry" id="open-source">
+      <article class="entry">
         <div class="entry-head"><time datetime="2026-11-16">2026-11-16</time><span class="tag">开源</span></div>
-        <h2>品牌站前端开源</h2>
-        <p>品牌站的前端代码已在 GitHub 公开，采用 MIT 许可，v1.0.0 同步发布。开源的是代码；NALIDE 的名称、Logo、图片与站点文案不随代码授权。</p>
+        <h2><a href="/announcements/2026-11-16-open-source/">品牌站前端开源</a></h2>
       </article>
 
-      <article class="entry" id="internetnl-100">
+      <article class="entry">
         <div class="entry-head"><time datetime="2026-11-16">2026-11-16</time><span class="tag">测试</span></div>
-        <h2>Internet.nl 网站测试满分</h2>
-        <p>本站在 Internet.nl 的网站测试中取得 100%，进入其名人堂；页脚的徽章就链向那份公开报告。</p>
+        <h2><a href="/announcements/2026-11-16-internetnl-100/">Internet.nl 网站测试满分</a></h2>
       </article>
 
-      <article class="entry" id="site-launch">
+      <article class="entry">
         <div class="entry-head"><time datetime="2026-11-15">2026-11-15</time><span class="tag">上线</span></div>
-        <h2>品牌站全新上线</h2>
-        <p>NALIDE 品牌站以全新面貌上线：主站只讲品牌，产品陆续转入各自的子站，安全配置同步到位。</p>
+        <h2><a href="/announcements/2026-11-15-site-launch/">品牌站全新上线</a></h2>
       </article>
 
-      <article class="entry" id="disclosure-upgrade">
+      <article class="entry">
         <div class="entry-head"><time datetime="2026-11-15">2026-11-15</time><span class="tag">安全</span></div>
-        <h2>漏洞披露政策升级</h2>
-        <p>披露政策对齐 disclose.io 的完全安全港条款：善意的安全研究得到明确的授权与免责承诺。细则见<a href="/security/">漏洞披露政策</a>。</p>
+        <h2><a href="/announcements/2026-11-15-disclosure-upgrade/">漏洞披露政策升级</a></h2>
       </article>
 
-      <article class="entry" id="mail-security">
+      <article class="entry">
         <div class="entry-head"><time datetime="2026-11-15">2026-11-15</time><span class="tag">邮件</span></div>
-        <h2>邮件安全策略启用</h2>
-        <p>nalide.com 的域名邮箱已启用 MTA-STS（强制模式）与 TLS 报告：邮件传输必须加密投递，异常情况我们会收到报告。</p>
+        <h2><a href="/announcements/2026-11-15-mail-security/">邮件安全策略启用</a></h2>
       </article>
 
       <a class="back" href="/">← 返回首页</a>

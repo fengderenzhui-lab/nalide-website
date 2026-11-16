@@ -72,16 +72,18 @@ export const newsSection = {
 };
 
 export const announcements = [
-  {date: '2026-11-16', title: '品牌站前端开源', body: '前端代码已在 GitHub 公开（MIT 许可），v1.0.0 同步发布。'},
-  {date: '2026-11-16', title: 'Internet.nl 测试满分', body: '本站在 Internet.nl 网站测试中取得 100%，进入其名人堂。'},
-  {date: '2026-11-15', title: '品牌站全新上线', body: '主站只讲品牌，产品陆续转入各自子站。'},
+  {date: '2026-11-16', tag: '开源', title: '品牌站前端开源', body: '前端代码已在 GitHub 公开（MIT 许可），v1.0.0 同步发布。', href: '/announcements/2026-11-16-open-source/'},
+  {date: '2026-11-16', tag: '测试', title: 'Internet.nl 测试满分', body: '本站在 Internet.nl 网站测试中取得 100%，进入其名人堂。', href: '/announcements/2026-11-16-internetnl-100/'},
+  {date: '2026-11-15', tag: '上线', title: '品牌站全新上线', body: '主站只讲品牌，产品陆续转入各自子站。', href: '/announcements/2026-11-15-site-launch/'},
 ];
 
-/** 关于小段：首页公告区下方的一段品牌简介，全文在 /about/。 */
+/** 关于小段：首页公告区下方的一段品牌简介，全文在 /about/，故事在 /story/。 */
 export const aboutTeaser = {
   eyebrow: '关于',
   body: 'NALIDE 是一套给中小商家的 IDC 业务系统，把域名、SSL 与云资源的计费和开通装进一套系统。我们把安全放在第一位，承诺长期维护——故事从这里说起。',
   cta: '了解 NALIDE',
+  storyCta: '读我们的故事',
+  storyHref: '/story/',
 };
 
 /** 页脚友情链接：自家站点互链（中小微站页脚同样链回本站）。 */

@@ -16,8 +16,9 @@
 
 ## 品牌
 
-- [关于 NALIDE](https://nalide.com/about/)：品牌简介与故事——为什么做这套系统、安全与长期维护的来历
-- [公告](https://nalide.com/announcements/)：上线、开源、安全与政策方面的重要变化记录
+- [关于 NALIDE](https://nalide.com/about/)：品牌简介——我们是谁、信什么
+- [我们的故事](https://nalide.com/story/)：为什么做这套系统、安全与长期维护的来历
+- [公告](https://nalide.com/announcements/)：上线、开源、安全与政策方面的重要变化记录，每条有独立详情页
 
 ## 联系
 
