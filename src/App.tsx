@@ -19,8 +19,11 @@ export default function App() {
   return (
     <>
       <div aria-hidden="true" className="grain" />
+      <a className="skip-link" href="#main">
+        跳到主要内容
+      </a>
       <Header />
-      <main>
+      <main id="main">
         <Earthrise />
         <MissionLog />
         <Trajectory />

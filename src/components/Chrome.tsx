@@ -34,7 +34,7 @@ export function Header() {
     [],
   );
   return (
-    <header className="fixed inset-x-0 top-0 z-50 text-white" style={{paddingTop: 'env(safe-area-inset-top)'}}>
+    <header className="fixed inset-x-0 top-0 z-50 text-white [padding-top:env(safe-area-inset-top)]">
       <div
         className={`chrome-in flex items-center justify-between px-4 transition-all duration-500 sm:px-6 md:px-[3vw] ${
           compact ? 'bg-void/75 pt-3 pb-3 shadow-[0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-md sm:pt-3 sm:pb-3' : 'pt-4 pb-4 sm:pt-5 sm:pb-5'
@@ -72,7 +72,7 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-void px-4 pt-10 sm:px-6 md:px-[6vw]" style={{paddingBottom: 'max(2rem, env(safe-area-inset-bottom))'}}>
+    <footer className="border-t border-white/10 bg-void px-4 pt-10 [padding-bottom:max(2rem,env(safe-area-inset-bottom))] sm:px-6 md:px-[6vw]">
       <div className="flex items-center gap-2.5 pb-8 font-mono text-label text-white/70 uppercase">
         <Crescent className="size-4 text-white/85" />
         <span className="font-display text-[0.8125rem] tracking-[0.36em] text-white">{brand.wordmark}</span>

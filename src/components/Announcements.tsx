@@ -25,8 +25,7 @@ export function Announcements() {
           <li
             key={`${a.date}-${a.title}`}
             data-reveal
-            style={{transitionDelay: `${i * 110}ms`}}
-            className="grid gap-1.5 border-b border-white/10 py-6 last:border-b-0 md:grid-cols-[11rem_minmax(0,1fr)] md:gap-8 md:py-7"
+            className={`dly-${i} grid gap-1.5 border-b border-white/10 py-6 last:border-b-0 md:grid-cols-[11rem_minmax(0,1fr)] md:gap-8 md:py-7`}
           >
             <span className="flex items-center gap-3">
               <time dateTime={a.date} className="font-mono text-label text-regolith/50">

@@ -31,8 +31,7 @@ export function Missions() {
           <li
             key={m.name}
             data-reveal
-            style={{transitionDelay: `${i * 110}ms`}}
-            className={`group relative flex flex-col overflow-hidden rounded-[8px] p-6 ring-1 transition-[transform,box-shadow] duration-500 hover:-translate-y-1.5 md:p-8 ${
+            className={`dly-${i} group relative flex flex-col overflow-hidden rounded-[8px] p-6 ring-1 transition-[transform,box-shadow] duration-500 hover:-translate-y-1.5 md:p-8 ${
               m.featured ? 'bg-void-2 ring-earth/60 hover:shadow-[0_30px_80px_-30px_rgb(111_182_255/0.45)]' : 'bg-void-2/60 ring-white/10 hover:ring-white/25'
             }`}
           >

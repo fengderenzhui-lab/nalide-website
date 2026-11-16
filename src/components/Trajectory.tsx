@@ -13,7 +13,6 @@ import {onFrame} from '../lib/scroll';
  * coast. The Earth is cut from the hero's own Earth layer.
  */
 
-const SECTION_VH = 380;
 const WINDOW = [0.06, 0.92] as const;
 const DISTANCE = 384400;
 
@@ -76,7 +75,7 @@ export function Trajectory() {
   const earthH = earthW * (1520 / 2688);
 
   return (
-    <section ref={rootRef} id="trajectory" aria-labelledby="trajectory-title" className="relative bg-void" style={{height: `${SECTION_VH}svh`}}>
+    <section ref={rootRef} id="trajectory" aria-labelledby="trajectory-title" className="relative bg-void h-[380svh]">
       <div className="sticky top-0 flex h-screen-s flex-col overflow-hidden px-4 pt-20 pb-8 sm:px-6 md:px-[6vw] md:pt-24">
         <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>

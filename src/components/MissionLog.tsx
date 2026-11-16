@@ -12,7 +12,6 @@ import {onFrame} from '../lib/scroll';
  * rest dim back, and each picture drifts against its frame.
  */
 
-const SECTION_VH = 340;
 
 export function MissionLog() {
   const rootRef = useRef<HTMLElement>(null);
@@ -60,7 +59,7 @@ export function MissionLog() {
   }, []);
 
   return (
-    <section ref={rootRef} id="log" aria-labelledby="log-title" className="relative bg-void" style={{height: `${SECTION_VH}svh`}}>
+    <section ref={rootRef} id="log" aria-labelledby="log-title" className="relative bg-void h-[340svh]">
       <div className="sticky top-0 flex h-screen-s flex-col justify-center overflow-hidden pt-16 md:flex-row md:items-center md:justify-start md:pt-0">
         {/* Cards slide under the intro column and off the right edge;
             soften both seams with a fade into the section background. */}
@@ -80,7 +79,7 @@ export function MissionLog() {
               / 0{log.length}
             </span>
             <span className="relative h-px w-32 bg-white/15">
-              <span ref={barRef} className="absolute inset-0 origin-left bg-earth" style={{transform: 'scaleX(0)'}} />
+              <span ref={barRef} className="absolute inset-0 origin-left bg-earth [transform:scaleX(0)]" />
             </span>
           </div>
         </div>

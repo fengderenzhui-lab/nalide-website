@@ -1,7 +1,7 @@
 // SPDX-FileCopyrightText: 2026 NALIDE
 // SPDX-License-Identifier: MIT
 
-import {useState, type FormEvent} from 'react';
+import {useRef, useState, type FormEvent} from 'react';
 import {brand, reserve} from '../content';
 import {useReveals} from '../hooks/useReveals';
 
@@ -13,7 +13,23 @@ type Status = 'idle' | 'invalid' | 'sent';
  */
 export function Reserve() {
   const ref = useReveals<HTMLElement>();
+  const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<Status>('idle');
+  const [copied, setCopied] = useState(false);
+
+  const onCopy = async () => {
+    const form = formRef.current;
+    if (!form) return;
+    const data = new FormData(form);
+    const text = `联系 NALIDE\n称呼：${String(data.get('name') ?? '')}\n邮箱：${String(data.get('email') ?? '')}\n意向方向：${String(data.get('mission') ?? '')}\n（请发送至 ${brand.email}）`;
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2600);
+    } catch {
+      setCopied(false);
+    }
+  };
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -50,7 +66,7 @@ export function Reserve() {
           </p>
         </div>
 
-        <form noValidate onSubmit={onSubmit} aria-describedby="reserve-status" className="space-y-3" data-reveal>
+        <form ref={formRef} noValidate onSubmit={onSubmit} aria-describedby="reserve-status" className="space-y-3" data-reveal>
           <label className="block">
             <span className="mb-1.5 block font-mono text-label text-regolith/60 uppercase">怎么称呼</span>
             <input name="name" required autoComplete="name" placeholder="你的名字或公司" className={field} onInput={() => setStatus('idle')} />
@@ -71,6 +87,9 @@ export function Reserve() {
           </label>
           <button type="submit" className="mt-2 w-full rounded-[4px] bg-white px-5 py-4 font-mono text-label font-medium text-void uppercase transition-colors hover:bg-earth">
             提交联系方式
+          </button>
+          <button type="button" onClick={onCopy} className="w-full rounded-[4px] px-5 py-3 font-mono text-label text-regolith/70 uppercase ring-1 ring-white/15 transition-colors hover:text-white hover:ring-white/35">
+            {copied ? '已复制，去粘贴发送' : '复制联系信息'}
           </button>
           <p id="reserve-status" role="status" className="min-h-[1.25rem] text-[0.8125rem] text-regolith/70">
             {status === 'invalid' && '称呼和有效邮箱填一下，方便我们回你。'}

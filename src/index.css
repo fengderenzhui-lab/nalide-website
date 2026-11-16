@@ -217,3 +217,35 @@ html.lenis body {
     transform: translate3d(0, 12px, 0);
   }
 }
+
+/* Hero dust veil backdrop (was an inline style; externalized for CSP). */
+.veil-bg {
+  background:
+    radial-gradient(60% 50% at 30% 40%, rgba(170, 184, 210, 0.55), transparent 70%),
+    radial-gradient(50% 60% at 75% 60%, rgba(120, 140, 180, 0.5), transparent 70%),
+    radial-gradient(80% 80% at 50% 50%, rgba(20, 26, 40, 0.85), rgba(5, 7, 12, 0.95));
+}
+
+/* Reveal stagger delays (were inline styles; externalized for CSP). */
+.dly-0 { transition-delay: 0ms; }
+.dly-1 { transition-delay: 110ms; }
+.dly-2 { transition-delay: 220ms; }
+.dly-3 { transition-delay: 330ms; }
+
+/* Skip link: visually hidden until focused. */
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 60;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  background: #6fb6ff;
+  color: #04070f;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  transform: translateY(-300%);
+}
+.skip-link:focus-visible {
+  transform: translateY(0);
+}

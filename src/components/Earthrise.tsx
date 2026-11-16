@@ -23,7 +23,6 @@ import {onFrame} from '../lib/scroll';
  * above the horizon, landing-site coordinates.
  */
 
-const STAGE_VH = 440;
 
 type LayerName = 'sky' | 'earth' | 'moonscape' | 'frame' | 'astronaut' | 'ground';
 const ORDER: LayerName[] = ['sky', 'earth', 'moonscape', 'frame', 'astronaut', 'ground'];
@@ -176,14 +175,15 @@ export function Earthrise() {
   );
 
   return (
-    <section id="top" ref={rootRef} aria-label="NALIDE 品牌主视觉" className="relative" style={{height: `${STAGE_VH}svh`}}>
+    <section id="top" ref={rootRef} aria-label="NALIDE 品牌主视觉" className="relative h-[440svh]">
       <div className={`sticky top-0 h-screen-s overflow-hidden bg-void stage-intro ${live ? 'is-live' : ''}`}>
         {ORDER.slice(0, 3).map((n) => layer(n))}
 
         {/* Title sits between the plains and the crater. */}
-        <div ref={titleRef} className="pointer-events-none absolute inset-x-0 top-[26%] text-center md:top-[30%]" style={{opacity: 0}}>
-          <h1 className="font-display text-hero text-white [text-shadow:0_4px_40px_rgb(0_0_0/0.5)]" style={{marginRight: '-0.24em'}}>
+        <div ref={titleRef} className="pointer-events-none absolute inset-x-0 top-[26%] text-center opacity-0 md:top-[30%]">
+          <h1 className="font-display text-hero text-white [text-shadow:0_4px_40px_rgb(0_0_0/0.5)] -mr-[0.24em]">
             {hero.title}
+            <span className="sr-only"> —— 一个认真做基础设施的品牌</span>
           </h1>
           <p className="mt-4 font-mono text-label text-regolith/80 uppercase">{hero.kicker}</p>
         </div>
@@ -194,15 +194,11 @@ export function Earthrise() {
         <div
           ref={veilRef}
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(60% 50% at 30% 40%, rgba(170,184,210,0.55), transparent 70%), radial-gradient(50% 60% at 75% 60%, rgba(120,140,180,0.5), transparent 70%), radial-gradient(80% 80% at 50% 50%, rgba(20,26,40,0.85), rgba(5,7,12,0.95))',
-          }}
+          className="veil-bg pointer-events-none absolute inset-0"
         >
           <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center">
             <p className="font-mono text-label text-regolith/80 uppercase">{hero.kicker}</p>
-            <p className="mt-3 font-display text-[0.8125rem] tracking-[0.5em] text-white/90 uppercase" style={{marginRight: '-0.5em'}}>
+            <p className="mt-3 font-display text-[0.8125rem] tracking-[0.5em] text-white/90 uppercase -mr-[0.5em]">
               Scroll to clear the dust
             </p>
             <span aria-hidden="true" className="mt-6 inline-block animate-bounce text-regolith/70 motion-reduce:animate-none">
@@ -213,7 +209,7 @@ export function Earthrise() {
         <canvas ref={dustRef} aria-hidden="true" className="pointer-events-none absolute inset-0 size-full" />
 
         {/* Telemetry HUD. */}
-        <div ref={hudRef} aria-hidden="true" className="pointer-events-none absolute inset-4 font-mono text-[0.625rem] tracking-[0.14em] text-regolith/75 uppercase sm:inset-6 md:text-label" style={{opacity: 0, padding: 'env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)'}}>
+        <div ref={hudRef} aria-hidden="true" className="pointer-events-none absolute inset-4 font-mono text-[0.625rem] tracking-[0.14em] text-regolith/75 uppercase opacity-0 [padding:env(safe-area-inset-top)_env(safe-area-inset-right)_env(safe-area-inset-bottom)_env(safe-area-inset-left)] sm:inset-6 md:text-label">
           <div className="brackets absolute inset-0 text-regolith/40" />
           <div className="absolute top-16 left-3 space-y-1 md:top-20 md:left-4">
             <p ref={clockRef}>T+ 00:00:00</p>
