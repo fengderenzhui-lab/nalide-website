@@ -103,6 +103,7 @@ export const aboutLinks = [
   {label: '公告', href: '/announcements/'},
   {label: '品牌简介', href: '/about/'},
   {label: '我们的故事', href: '/story/'},
+  {label: 'GitHub 开源仓库', href: 'https://github.com/fengderenzhui-lab/nalide-website'},
 ];
 
 /** 页脚安全组：披露政策、security.txt 直链与报告入口（独立成组）。 */

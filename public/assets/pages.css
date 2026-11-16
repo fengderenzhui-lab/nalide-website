@@ -96,3 +96,16 @@ a:hover { color: #9fc6ff; }
 /* security page seal (was inline styles) */
 .g-doc .seal-wrap { margin-top: 20px; }
 .g-doc .seal-img { height: 40px; width: auto; display: block; }
+
+/* about page facts card */
+.g-about .facts { border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 6px 18px; margin-top: 14px; background: rgba(255, 255, 255, 0.02); }
+.g-about .fact-row { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 16px; padding: 11px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.07); align-items: baseline; }
+.g-about .fact-row:last-child { border-bottom: none; }
+.g-about .fact-name { color: #8fa8c8; font-size: 13.5px; }
+.g-about .fact-val { color: #e6eefb; font-size: 14.5px; }
+
+/* story page timeline */
+.g-story .tl { border-top: 1px solid rgba(255, 255, 255, 0.08); margin-top: 14px; }
+.g-story .tl-row { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08); align-items: baseline; }
+.g-story .tl-date { color: #8fa8c8; font-size: 13.5px; font-family: "IBM Plex Mono", monospace; }
+.g-story .tl-text { color: #dbe6f5; font-size: 14.5px; }
