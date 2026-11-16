@@ -10,6 +10,9 @@ export const brand = {
   name: 'Nalide',
   wordmark: 'NALIDE',
   email: 'contact@nalide.com',
+  // Cloudflare Turnstile site key for the contact form (public by design;
+  // the matching secret lives on the server, outside the webroot).
+  turnstileSitekey: '0x4AAAAAAGDMa4uQ1tVwPcPV',
 };
 
 export const nav = [
