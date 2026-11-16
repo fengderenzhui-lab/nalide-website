@@ -89,10 +89,10 @@ export const aboutTeaser = {
   storyHref: '/story/',
 };
 
-/** 页脚友情链接：自家站点互链（中小微站页脚同样链回本站）。 */
-export const friends = [
+/** 页脚友情链接：自家站点互链（中小微站页脚同样链回本站）。windblade.top 是第三方站点，非我方运营。 */
+export const friends: {label: string; href: string; note?: string}[] = [
   {label: '中小微企业交流平台', href: 'https://www.zhongxiaowei.cn'},
-  {label: 'windblade.top', href: 'https://windblade.top'},
+  {label: 'windblade.top', href: 'https://windblade.top', note: '第三方站点，非我方运营'},
 ];
 
 /** 页脚政策链接：隐私与协议（静态页，源码在 public/ 下）。 */

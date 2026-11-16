@@ -126,9 +126,12 @@ export function Footer() {
           <span className="text-regolith/60">友情链接</span>
           <span className="flex flex-wrap gap-x-5 gap-y-1.5">
             {friends.map((f) => (
-              <a key={f.href} href={f.href} target="_blank" rel="noopener" className="lowercase hover:text-white">
-                {f.label}
-              </a>
+              <span key={f.href} className="inline-flex flex-wrap items-baseline gap-x-1.5">
+                <a href={f.href} target="_blank" rel="noopener" className="lowercase hover:text-white">
+                  {f.label}
+                </a>
+                {f.note ? <span className="normal-case text-regolith/50">（{f.note}）</span> : null}
+              </span>
             ))}
           </span>
         </div>
@@ -147,7 +150,10 @@ export function Footer() {
         </a>
       </div>
       <div className="pt-2 font-mono text-label text-regolith/60 normal-case">
-        <span>运营公司：HongKongShine Electronic Co., Limited</span>
+        <span>运营公司：HongKongShine Electronic Co., Limited（港耀電子有限公司）</span>
+      </div>
+      <div className="pt-1 font-mono text-label text-regolith/60 normal-case">
+        <span>商业登记号：77687645 · 注册地址：Room 701, Unit 108, 7/F, Tower B, New Mandarin Plaza, 14 Science Museum Road, Tsim Sha Tsui, Kowloon, Hong Kong</span>
       </div>
       <div className="flex flex-wrap items-center gap-x-5 gap-y-3 pt-6">
         <a href={greenHosting.href} target="_blank" rel="noopener" className="inline-block opacity-90 transition-opacity hover:opacity-100">
