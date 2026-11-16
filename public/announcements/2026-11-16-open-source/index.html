@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>品牌站前端开源 · 公告 · NALIDE</title>
-    <meta name="description" content="品牌站的前端代码已在 GitHub 公开，采用 MIT 许可，v1.0.0 同步发布。开源的是代码；名称、Logo、图片与站点文案不随代码授权。" />
+    <meta name="description" content="品牌站的前端代码已在 GitHub 公开，采用 MIT 许可，v1.0.0 同步发布。公开了什么、为什么开源、边界在哪、怎么参与，都在这一页。" />
     <meta property="og:title" content="品牌站前端开源 · NALIDE 公告" />
     <meta property="og:description" content="品牌站前端代码已在 GitHub 公开（MIT），v1.0.0 同步发布。" />
     <meta property="og:type" content="article" />
@@ -35,8 +35,11 @@
       .tag { font-size: 11px; letter-spacing: 0.1em; color: #7db4ff; border: 1px solid rgba(94, 162, 255, 0.35); border-radius: 3px; padding: 0 7px; line-height: 1.7; }
       h1 { font-size: 28px; color: #f2f7ff; margin: 10px 0 14px; font-weight: 700; }
       .lede { font-size: 17px; line-height: 1.8; color: #e6eefb; margin-bottom: 10px; }
+      h2 { font-size: 18px; color: #f2f7ff; margin: 32px 0 8px; font-weight: 700; }
       p, li { font-size: 15px; }
       p { margin: 10px 0; }
+      ul { padding-left: 1.2em; }
+      li { margin: 6px 0; }
       a { color: #5ea2ff; text-decoration: none; }
       a:hover { color: #9fc6ff; }
       .contact { border-top: 1px solid rgba(255, 255, 255, 0.08); margin-top: 36px; padding-top: 16px; font-size: 14px; color: #7d90ad; }
@@ -71,13 +74,22 @@
       <div class="entry-head"><time datetime="2026-11-16">2026 年 11 月 16 日</time><span class="tag">开源</span></div>
       <h1>品牌站前端开源</h1>
       <p class="lede">品牌站的前端代码已在 GitHub 公开，采用 MIT 许可，v1.0.0 同步发布。</p>
-      <p>仓库在 <a href="https://github.com/fengderenzhui-lab/nalide-website" target="_blank" rel="noopener">github.com/fengderenzhui-lab/nalide-website</a>。公开的是构建本站的全部前端源码：页面、样式、构建与预渲染脚本、冒烟测试与许可规范文件，一应俱全，持续集成全绿。</p>
-      <p>边界说清：开源的是代码。NALIDE 的名称与 Logo、站内图片、品牌文案不随代码授权；字体按各自的开源许可（SIL OFL 1.1）。</p>
-      <p>欢迎围观、提 issue 或 PR，贡献方式写在仓库的 CONTRIBUTING 里。发现安全问题请走<a href="/security/">漏洞披露政策</a>，不要公开提 issue。</p>
+
+      <h2>公开了什么</h2>
+      <p>仓库在 <a href="https://github.com/fengderenzhui-lab/nalide-website" target="_blank" rel="noopener">github.com/fengderenzhui-lab/nalide-website</a>。构建本站的全部前端源码都在里面：页面与组件、样式、构建与预渲染脚本、冒烟测试、代码规范与持续集成配置。技术上是 React + Vite + TypeScript + Tailwind 的一套现代前端，克隆下来就能跑。</p>
+
+      <h2>为什么开源</h2>
+      <p>一是透明：我们嘴上说重视安全与规范，代码摆出来，任何人都能检查这句话的成色。二是给同行留个参考：预渲染、全仓 SPDX 许可标注（通过 FSFE REUSE 合规检查）、无障碍这些不起眼的功夫，都写在代码里。</p>
+
+      <h2>边界</h2>
+      <p>开源的是代码。NALIDE 的名称与 Logo、站内图片、品牌文案不随代码授权；字体按各自的开源许可（SIL OFL 1.1）。这条边界写在仓库 README 的最前面，不藏着。</p>
+
+      <h2>怎么参与</h2>
+      <p>欢迎围观、提 issue 或 PR，贡献方式见仓库的 CONTRIBUTING。唯独安全问题例外：请走<a href="/security/">漏洞披露政策</a>私下报告，不要公开提 issue。</p>
+
       <p class="contact">联系：<a href="mailto:contact@nalide.com">contact@nalide.com</a></p>
       <div class="more">
         <h3>更多公告</h3>
-        <div class="more-row"><time datetime="2026-11-16">2026-11-16</time><a href="/announcements/2026-11-16-internetnl-100/">Internet.nl 网站测试满分</a></div>
         <div class="more-row"><time datetime="2026-11-15">2026-11-15</time><a href="/announcements/2026-11-15-site-launch/">品牌站全新上线</a></div>
         <div class="more-row"><time datetime="2026-11-15">2026-11-15</time><a href="/announcements/2026-11-15-disclosure-upgrade/">漏洞披露政策升级</a></div>
       </div>

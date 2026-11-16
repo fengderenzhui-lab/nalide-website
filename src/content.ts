@@ -73,8 +73,8 @@ export const newsSection = {
 
 export const announcements = [
   {date: '2026-11-16', tag: '开源', title: '品牌站前端开源', body: '前端代码已在 GitHub 公开（MIT 许可），v1.0.0 同步发布。', href: '/announcements/2026-11-16-open-source/'},
-  {date: '2026-11-16', tag: '测试', title: 'Internet.nl 测试满分', body: '本站在 Internet.nl 网站测试中取得 100%，进入其名人堂。', href: '/announcements/2026-11-16-internetnl-100/'},
   {date: '2026-11-15', tag: '上线', title: '品牌站全新上线', body: '主站只讲品牌，产品陆续转入各自子站。', href: '/announcements/2026-11-15-site-launch/'},
+  {date: '2026-11-15', tag: '安全', title: '漏洞披露政策升级', body: '披露政策对齐 disclose.io 完全安全港条款，善意研究有明确承诺。', href: '/announcements/2026-11-15-disclosure-upgrade/'},
 ];
 
 /** 关于小段：首页公告区下方的一段品牌简介，全文在 /about/，故事在 /story/。 */
