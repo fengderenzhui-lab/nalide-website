@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 import {useEffect, useState, type MouseEvent} from 'react';
-import {brand, colophon, friends, greenHosting, internetnl, nav, policies, securityLinks, statusPage} from '../content';
+import {aboutLinks, brand, colophon, friends, greenHosting, internetnl, nav, policies, securityLinks, statusPage} from '../content';
 import {onFrame, scrollToHash} from '../lib/scroll';
 
 function go(e: MouseEvent<HTMLAnchorElement>, then?: () => void) {
@@ -110,6 +110,16 @@ export function Footer() {
             <a href={`mailto:${brand.email}`} className="lowercase hover:text-white">
               {brand.email}
             </a>
+          </span>
+        </div>
+        <div className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-baseline gap-x-5">
+          <span className="text-regolith/40">关于</span>
+          <span className="flex flex-wrap gap-x-5 gap-y-1.5">
+            {aboutLinks.map((a) => (
+              <a key={a.href} href={a.href} className="hover:text-white">
+                {a.label}
+              </a>
+            ))}
           </span>
         </div>
         <div className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-baseline gap-x-5">

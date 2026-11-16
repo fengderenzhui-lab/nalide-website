@@ -98,6 +98,13 @@ export const policies = [
   {label: '用户协议', href: '/terms/'},
 ];
 
+/** 页脚关于组：自家内容页（公告、简介、故事），排在友情链接之前。 */
+export const aboutLinks = [
+  {label: '公告', href: '/announcements/'},
+  {label: '品牌简介', href: '/about/'},
+  {label: '我们的故事', href: '/story/'},
+];
+
 /** 页脚安全组：披露政策、security.txt 直链与报告入口（独立成组）。 */
 export const securityLinks = [
   {label: '漏洞披露政策', href: '/security/'},
