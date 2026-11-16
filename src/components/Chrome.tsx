@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 import {useEffect, useState, type MouseEvent} from 'react';
-import {aboutLinks, brand, colophon, friends, greenHosting, internetnl, nav, policies, securityLinks, statusPage} from '../content';
+import {aboutLinks, brand, colophon, friends, greenHosting, internetnl, nav, policies, securityHeaders, securityLinks, statusPage} from '../content';
 import {onFrame, scrollToHash} from '../lib/scroll';
 
 function go(e: MouseEvent<HTMLAnchorElement>, then?: () => void) {
@@ -155,6 +155,9 @@ export function Footer() {
         </a>
         <a href={internetnl.href} target="_blank" rel="noopener" className="inline-block opacity-90 transition-opacity hover:opacity-100">
           <img src={internetnl.src} alt={internetnl.alt} width={204} height={38} loading="lazy" className="h-10 w-auto" />
+        </a>
+        <a href={securityHeaders.href} target="_blank" rel="noopener" className="inline-block opacity-90 transition-opacity hover:opacity-100">
+          <img src={securityHeaders.src} alt={securityHeaders.alt} width={248} height={48} loading="lazy" className="h-10 w-auto" />
         </a>
       </div>
     </footer>

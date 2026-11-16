@@ -136,6 +136,12 @@ export const internetnl = {
   alt: '100% score in the Internet.nl website test — nalide.com',
 };
 
+export const securityHeaders = {
+  href: 'https://securityheaders.com/?q=nalide.com&followRedirects=on',
+  src: '/badges/security-headers.svg',
+  alt: 'A+ rating in the Security Headers scan — nalide.com',
+};
+
 /** 页脚署名与站点信息：自托管字体均为 SIL OFL 1.1，许可全文随站点 /fonts/ 目录发布。 */
 export const colophon = {
   typefaces: '字体 Manrope · Michroma · IBM Plex Mono — SIL OFL 1.1',
