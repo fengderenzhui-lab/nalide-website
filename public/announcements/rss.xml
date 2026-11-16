@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>NALIDE 公告</title>
+    <link>https://nalide.com/announcements/</link>
+    <description>NALIDE 的重要变化记录：上线、开源、安全与政策更新。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 16 Nov 2026 12:00:00 +0800</lastBuildDate>
+    <item>
+      <title>品牌站前端开源</title>
+      <link>https://nalide.com/announcements/#open-source</link>
+      <guid isPermaLink="true">https://nalide.com/announcements/#open-source</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0800</pubDate>
+      <description>品牌站的前端代码已在 GitHub 公开，采用 MIT 许可，v1.0.0 同步发布。开源的是代码；NALIDE 的名称、Logo、图片与站点文案不随代码授权。</description>
+    </item>
+    <item>
+      <title>Internet.nl 网站测试满分</title>
+      <link>https://nalide.com/announcements/#internetnl-100</link>
+      <guid isPermaLink="true">https://nalide.com/announcements/#internetnl-100</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0800</pubDate>
+      <description>本站在 Internet.nl 的网站测试中取得 100%，进入其名人堂；页脚的徽章就链向那份公开报告。</description>
+    </item>
+    <item>
+      <title>品牌站全新上线</title>
+      <link>https://nalide.com/announcements/#site-launch</link>
+      <guid isPermaLink="true">https://nalide.com/announcements/#site-launch</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0800</pubDate>
+      <description>NALIDE 品牌站以全新面貌上线：主站只讲品牌，产品陆续转入各自的子站，安全配置同步到位。</description>
+    </item>
+    <item>
+      <title>漏洞披露政策升级</title>
+      <link>https://nalide.com/announcements/#disclosure-upgrade</link>
+      <guid isPermaLink="true">https://nalide.com/announcements/#disclosure-upgrade</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0800</pubDate>
+      <description>披露政策对齐 disclose.io 的完全安全港条款：善意的安全研究得到明确的授权与免责承诺。</description>
+    </item>
+    <item>
+      <title>邮件安全策略启用</title>
+      <link>https://nalide.com/announcements/#mail-security</link>
+      <guid isPermaLink="true">https://nalide.com/announcements/#mail-security</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0800</pubDate>
+      <description>nalide.com 的域名邮箱已启用 MTA-STS（强制模式）与 TLS 报告：邮件传输必须加密投递，异常情况我们会收到报告。</description>
+    </item>
+  </channel>
+</rss>
