@@ -47,7 +47,7 @@ export function Reserve() {
   };
 
   const field =
-    'w-full rounded-[4px] bg-white/[0.04] px-4 py-3.5 text-body text-white ring-1 ring-white/15 outline-none placeholder:text-regolith/40 focus:ring-earth user-invalid:ring-red-400/70';
+    'w-full rounded-[4px] bg-white/[0.04] px-4 py-3.5 text-body text-white ring-1 ring-white/15 outline-none placeholder:text-regolith/60 focus:ring-earth user-invalid:ring-red-400/70';
 
   return (
     <section ref={ref} id="reserve" aria-labelledby="reserve-title" className="relative overflow-hidden bg-void px-4 pb-28 sm:px-6 md:px-[6vw] md:pb-40">
@@ -61,7 +61,7 @@ export function Reserve() {
             {reserve.heading}
           </h2>
           <p className="mt-5 max-w-[28rem] text-body text-regolith/70">{reserve.body}</p>
-          <p className="mt-10 font-mono text-label text-regolith/50 uppercase">
+          <p className="mt-10 font-mono text-label text-regolith/60 uppercase">
             直接写信 · <span className="text-white">{brand.email}</span>
           </p>
         </div>

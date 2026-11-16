@@ -165,8 +165,10 @@ export function Earthrise() {
       className={`absolute inset-0 will-change-transform ${extra}`}
     >
       <picture>
-        <source media="(max-width: 767px)" srcSet={`/layers/m/${name}.webp`} />
-        <img src={`/layers/d/${name}.webp`} alt="" aria-hidden="true" className={FIT} decoding="async" fetchPriority={name === 'sky' ? 'high' : 'auto'} />
+        <source media="(max-width: 767px)" srcSet={`/layers/m/${name}.avif`} type="image/avif" />
+        <source media="(max-width: 767px)" srcSet={`/layers/m/${name}.webp`} type="image/webp" />
+        <source srcSet={`/layers/d/${name}.avif`} type="image/avif" />
+        <img src={`/layers/d/${name}.webp`} alt="" aria-hidden="true" className={FIT} decoding="async" loading={name === 'moonscape' ? 'lazy' : undefined} fetchPriority={name === 'sky' ? 'high' : 'auto'} />
       </picture>
       {/* The ground carries a black apron below it, so when it climbs it
           fills the screen and hands straight over to the page below. */}
@@ -210,16 +212,16 @@ export function Earthrise() {
 
         {/* Telemetry HUD. */}
         <div ref={hudRef} aria-hidden="true" className="pointer-events-none absolute inset-4 font-mono text-[0.625rem] tracking-[0.14em] text-regolith/75 uppercase opacity-0 [padding:env(safe-area-inset-top)_env(safe-area-inset-right)_env(safe-area-inset-bottom)_env(safe-area-inset-left)] sm:inset-6 md:text-label">
-          <div className="brackets absolute inset-0 text-regolith/40" />
+          <div className="brackets absolute inset-0 text-regolith/60" />
           <div className="absolute top-16 left-3 space-y-1 md:top-20 md:left-4">
             <p ref={clockRef}>T+ 00:00:00</p>
-            <p className="text-regolith/50">Mission clock</p>
+            <p className="text-regolith/60">Mission clock</p>
           </div>
           <div className="absolute top-16 right-3 space-y-1 text-right md:top-20 md:right-4">
             <p>
               Earth elev <span ref={elevRef} className="text-earth">0.0°</span>
             </p>
-            <p className="text-regolith/50">Above horizon</p>
+            <p className="text-regolith/60">Above horizon</p>
           </div>
           <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4">{hero.site}</div>
           <div className="absolute right-3 bottom-3 flex items-center gap-2 md:right-4 md:bottom-4">

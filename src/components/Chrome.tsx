@@ -82,10 +82,10 @@ export function Footer() {
           {statusPage.label}
         </a>
       </div>
-      <div className="grid gap-x-12 gap-y-3.5 font-mono text-label text-regolith/50 uppercase sm:grid-cols-2">
+      <div className="grid gap-x-12 gap-y-3.5 font-mono text-label text-regolith/60 uppercase sm:grid-cols-2">
         
         <div className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-baseline gap-x-5">
-          <span className="text-regolith/40">政策</span>
+          <span className="text-regolith/60">政策</span>
           <span className="flex flex-wrap gap-x-5 gap-y-1.5">
             {policies.map((p) => (
               <a key={p.href} href={p.href} className="hover:text-white">
@@ -95,7 +95,7 @@ export function Footer() {
           </span>
         </div>
         <div className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-baseline gap-x-5">
-          <span className="text-regolith/40">安全</span>
+          <span className="text-regolith/60">安全</span>
           <span className="flex flex-wrap gap-x-5 gap-y-1.5">
             {securityLinks.map((s) => (
               <a key={s.href} href={s.href} className={s.label.includes('.') ? 'lowercase hover:text-white' : 'hover:text-white'}>
@@ -105,7 +105,7 @@ export function Footer() {
           </span>
         </div>
         <div className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-baseline gap-x-5">
-          <span className="text-regolith/40">邮箱</span>
+          <span className="text-regolith/60">邮箱</span>
           <span className="flex flex-wrap gap-x-5 gap-y-1.5">
             <a href={`mailto:${brand.email}`} className="lowercase hover:text-white">
               {brand.email}
@@ -113,7 +113,7 @@ export function Footer() {
           </span>
         </div>
         <div className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-baseline gap-x-5">
-          <span className="text-regolith/40">关于</span>
+          <span className="text-regolith/60">关于</span>
           <span className="flex flex-wrap gap-x-5 gap-y-1.5">
             {aboutLinks.map((a) => (
               <a key={a.href} href={a.href} className="hover:text-white">
@@ -123,7 +123,7 @@ export function Footer() {
           </span>
         </div>
         <div className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-baseline gap-x-5">
-          <span className="text-regolith/40">友情链接</span>
+          <span className="text-regolith/60">友情链接</span>
           <span className="flex flex-wrap gap-x-5 gap-y-1.5">
             {friends.map((f) => (
               <a key={f.href} href={f.href} target="_blank" rel="noopener" className="lowercase hover:text-white">
@@ -141,14 +141,14 @@ export function Footer() {
           <img src={internetnl.src} alt={internetnl.alt} width={204} height={38} loading="lazy" className="h-10 w-auto" />
         </a>
       </div>
-      <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1.5 pt-7 font-mono text-label normal-case text-regolith/35">
+      <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1.5 pt-7 font-mono text-label normal-case text-regolith/60">
         <span>{colophon.typefaces}</span>
         <a href="/sitemap.xml" className="hover:text-white">
           站点地图
         </a>
         <span>更新于 {colophon.updated}</span>
       </div>
-      <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 pt-3.5 font-mono text-label text-regolith/50 uppercase">
+      <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 pt-3.5 font-mono text-label text-regolith/60 uppercase">
         <span>© {new Date().getFullYear()} NALIDE · 版权所有</span>
         <a href="#top" onClick={(e) => go(e)} className="hover:text-white">
           回到顶部 ↑

@@ -17,7 +17,7 @@ export function Announcements() {
             {newsSection.heading}
           </h2>
         </div>
-        <p className="font-mono text-label text-regolith/50 uppercase">{newsSection.note}</p>
+        <p className="font-mono text-label text-regolith/60 uppercase">{newsSection.note}</p>
       </div>
 
       <ol className="mt-14 border-y border-white/10 md:mt-20">
@@ -28,7 +28,7 @@ export function Announcements() {
             className={`dly-${i} grid gap-1.5 border-b border-white/10 py-6 last:border-b-0 md:grid-cols-[11rem_minmax(0,1fr)] md:gap-8 md:py-7`}
           >
             <span className="flex items-center gap-3">
-              <time dateTime={a.date} className="font-mono text-label text-regolith/50">
+              <time dateTime={a.date} className="font-mono text-label text-regolith/60">
                 {a.date}
               </time>
               <span className="rounded-[3px] border border-earth/40 px-1.5 font-mono text-[0.6875rem] leading-relaxed tracking-widest text-earth">

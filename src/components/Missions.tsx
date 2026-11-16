@@ -23,7 +23,7 @@ export function Missions() {
             {missions.heading}
           </h2>
         </div>
-        <p className="font-mono text-label text-regolith/50 uppercase">{missions.note}</p>
+        <p className="font-mono text-label text-regolith/60 uppercase">{missions.note}</p>
       </div>
 
       <ol className="mt-14 grid gap-4 md:mt-20 md:grid-cols-3 md:gap-5">
