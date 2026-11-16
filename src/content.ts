@@ -131,7 +131,7 @@ export const greenHosting = {
 
 /** Internet.nl 网站测试满分徽章（2026-11-16 实测 100%、进其名人堂；徽章图为官方图、本地托管，链接指向该次测试报告；按其徽章条款，分数保持 100% 期间可用）。 */
 export const internetnl = {
-  href: 'https://internet.nl/site/nalide.com/4413891/',
+  href: 'https://internet.nl/site/nalide.com/4415065/',
   src: '/badges/internetnl-100.svg',
   alt: '100% score in the Internet.nl website test — nalide.com',
 };
