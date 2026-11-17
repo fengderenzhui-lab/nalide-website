@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nalide.com/sitemap.xml
+Sitemap: https://www.nalide.com/sitemap.xml

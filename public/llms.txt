@@ -5,8 +5,8 @@
 ## 产品
 
 - [IDC 业务系统](https://idc.nalide.com)：给域名/SSL 经销商的业务系统（计费与自动开通），安全优先、持续维护；只做付费授权版，年付三档 ¥999 / ¥1,999 / ¥3,999，只做国内市场
-- [品牌生态](https://nalide.com/#log)：业务系统、Nalipass、证书管理、基础设施工具四条产品线一览
-- [品牌路径](https://nalide.com/#trajectory)：从业务系统起步，延展到工具矩阵与密码管理，再长成品牌生态
+- [品牌生态](https://www.nalide.com/#log)：业务系统、Nalipass、证书管理、基础设施工具四条产品线一览
+- [品牌路径](https://www.nalide.com/#trajectory)：从业务系统起步，延展到工具矩阵与密码管理，再长成品牌生态
 
 ## 产品（尚在子站建设中，先看主站介绍）
 
@@ -16,18 +16,18 @@
 
 ## 品牌
 
-- [关于 NALIDE](https://nalide.com/about/)：品牌简介——我们是谁、信什么
-- [我们的故事](https://nalide.com/story/)：为什么做这套系统、安全与长期维护的来历
-- [加入我们](https://nalide.com/careers/)：目前没有公开岗位，欢迎自荐
-- [品牌素材](https://nalide.com/brand/)：官方标志文件、品牌色与名称写法规范
-- [公告](https://nalide.com/announcements/)：上线、开源、安全与政策方面的重要变化记录，每条有独立详情页
+- [关于 NALIDE](https://www.nalide.com/about/)：品牌简介——我们是谁、信什么
+- [我们的故事](https://www.nalide.com/story/)：为什么做这套系统、安全与长期维护的来历
+- [加入我们](https://www.nalide.com/careers/)：目前没有公开岗位，欢迎自荐
+- [品牌素材](https://www.nalide.com/brand/)：官方标志文件、品牌色与名称写法规范
+- [公告](https://www.nalide.com/announcements/)：上线、开源、安全与政策方面的重要变化记录，每条有独立详情页
 
 ## 联系
 
 - 邮箱：contact@nalide.com
-- [联系区](https://nalide.com/#reserve)：产品合作与经销咨询
+- [联系区](https://www.nalide.com/#reserve)：产品合作与经销咨询
 
 ## 友情链接
 
 - [中小微企业交流平台](https://www.zhongxiaowei.cn)：中小微（深圳）企业发展有限公司官网
-- [windblade.top](https://windblade.top)：免费子域名平台
+- [windblade.top](https://windblade.top)：免费子域名平台，第三方站点，非我方运营
