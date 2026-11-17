@@ -1,6 +1,6 @@
 # NALIDE 品牌官网
 
-nalide.com 品牌站的前端源码，线上地址：https://nalide.com
+nalide.com 品牌站的前端源码，线上地址：https://www.nalide.com
 
 English version: [README.en.md](README.en.md)
 
@@ -38,7 +38,7 @@ node scripts/prerender.mjs
 
 ## 安全问题
 
-发现安全问题请按 https://nalide.com/security/ 的披露政策报告，不要直接开公开 Issue。
+发现安全问题请按 https://www.nalide.com/security/ 的披露政策报告，不要直接开公开 Issue。
 
 ## 参与和反馈
 
@@ -46,4 +46,4 @@ Bug 报告与功能建议请开 GitHub Issues；贡献流程见 [CONTRIBUTING.md
 
 ## About (English)
 
-This is the source code of the NALIDE brand website (https://nalide.com), a static site built with React 19, Vite 6, TypeScript and Tailwind CSS v4. Build it with `npm run build` followed by `node scripts/prerender.mjs` (the prerender step writes the rendered content back into `dist/index.html`). Bug reports and enhancement requests are welcome as GitHub Issues, in English or Chinese. The code is released under the MIT License; brand assets, images and site copy are not covered by that license (see the license section above). Security issues: please follow the disclosure policy at https://nalide.com/security/ instead of opening a public issue.
+This is the source code of the NALIDE brand website (https://www.nalide.com), a static site built with React 19, Vite 6, TypeScript and Tailwind CSS v4. Build it with `npm run build` followed by `node scripts/prerender.mjs` (the prerender step writes the rendered content back into `dist/index.html`). Bug reports and enhancement requests are welcome as GitHub Issues, in English or Chinese. The code is released under the MIT License; brand assets, images and site copy are not covered by that license (see the license section above). Security issues: please follow the disclosure policy at https://www.nalide.com/security/ instead of opening a public issue.

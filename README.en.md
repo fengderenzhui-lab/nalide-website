@@ -1,6 +1,6 @@
 # NALIDE Brand Website
 
-Source code of the NALIDE brand website: https://nalide.com
+Source code of the NALIDE brand website: https://www.nalide.com
 
 中文版：[README.md](README.md)
 
@@ -39,7 +39,7 @@ The prerender step is part of the release process, not optional: it writes the f
 
 ## Security issues
 
-Please report security issues following the disclosure policy at https://nalide.com/security/ — do not open a public issue. GitHub private vulnerability reporting is also enabled for this repository (Security tab → "Report a vulnerability").
+Please report security issues following the disclosure policy at https://www.nalide.com/security/ — do not open a public issue. GitHub private vulnerability reporting is also enabled for this repository (Security tab → "Report a vulnerability").
 
 ## Feedback and contributions
 

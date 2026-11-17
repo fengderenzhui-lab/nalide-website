@@ -124,22 +124,22 @@ export const statusPage = {label: '服务状态', href: 'https://stats.uptimerob
 
 /** 绿色托管核验（Green Web Foundation 数据集比对，认的是边缘托管商 Cloudflare；徽章图为官方图、本地托管，链接指向实时核验页；状态由每周漂移检查复核）。 */
 export const greenHosting = {
-  href: 'https://www.thegreenwebfoundation.org/green-web-check/?url=nalide.com',
+  href: 'https://www.thegreenwebfoundation.org/green-web-check/?url=www.nalide.com',
   src: '/badges/green-hosting.png',
   alt: 'This website runs on green hosting — verified by The Green Web Foundation',
 };
 
 /** Internet.nl 网站测试满分徽章（2026-11-16 实测 100%、进其名人堂；徽章图为官方图、本地托管，链接指向该次测试报告；按其徽章条款，分数保持 100% 期间可用）。 */
 export const internetnl = {
-  href: 'https://internet.nl/site/nalide.com/4415065/',
+  href: 'https://internet.nl/site/www.nalide.com/',
   src: '/badges/internetnl-100.svg',
-  alt: '100% score in the Internet.nl website test — nalide.com',
+  alt: '100% score in the Internet.nl website test — www.nalide.com',
 };
 
 export const securityHeaders = {
-  href: 'https://securityheaders.com/?q=nalide.com&followRedirects=on',
+  href: 'https://securityheaders.com/?q=www.nalide.com&followRedirects=on',
   src: '/badges/security-headers.svg',
-  alt: 'A+ rating in the Security Headers scan — nalide.com',
+  alt: 'A+ rating in the Security Headers scan — www.nalide.com',
 };
 
 /** 页脚署名与站点信息：自托管字体均为 SIL OFL 1.1，许可全文随站点 /fonts/ 目录发布。 */
